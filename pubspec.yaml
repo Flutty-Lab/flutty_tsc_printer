@@ -1,0 +1,27 @@
+name: flutty_tsc_printer
+description: "Flutter package to drive TSC label printers over TCP/IP using TSPL commands."
+version: 0.1.0
+homepage: https://github.com/Flutty-Lab/flutty_tsc_printer
+repository: https://github.com/Flutty-Lab/flutty_tsc_printer
+issue_tracker: https://github.com/Flutty-Lab/flutty_tsc_printer/issues
+
+topics:
+  - printer
+  - tsc
+  - tspl
+  - label
+  - flutter
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

@@ -1,0 +1,16 @@
+name: flutty_tsc_printer_example
+description: Example app for flutty_tsc_printer.
+publish_to: none
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutty_tsc_printer:
+    path: ../
+
+flutter:
+  uses-material-design: true
