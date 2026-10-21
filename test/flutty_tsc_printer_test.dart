@@ -34,8 +34,11 @@ void main() {
     received.clear();
   });
 
-  FluttyTscPrintRequest printRequest(int port,
-          {int writeTimeout = 500, int readTimeout = 300}) =>
+  FluttyTscPrintRequest printRequest(
+    int port, {
+    int writeTimeout = 500,
+    int readTimeout = 300,
+  }) =>
       FluttyTscPrintRequest(
         ipAddress: '127.0.0.1',
         port: port,
@@ -101,7 +104,9 @@ void main() {
     await expectLater(
       FluttyTscPrinter.testConnection(
         FluttyTscTestConnectionRequest(
-            ipAddress: '127.0.0.1', port: await deadPort()),
+          ipAddress: '127.0.0.1',
+          port: await deadPort(),
+        ),
       ),
       throwsA(isA<Exception>()),
     );

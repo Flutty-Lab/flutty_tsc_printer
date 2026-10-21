@@ -90,12 +90,7 @@ class _HomePageState extends State<HomePage> {
             TscGap(distance: 4, offset: 12),
             TscDirection(direction: 1),
             TscCls(),
-            TscText(
-              x: 10,
-              y: 10,
-              font: '3',
-              content: _textController.text,
-            ),
+            TscText(x: 10, y: 10, font: '3', content: _textController.text),
             TscBarcode(
               x: 10,
               y: 40,

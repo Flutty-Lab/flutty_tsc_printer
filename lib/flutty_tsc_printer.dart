@@ -28,7 +28,8 @@ class FluttyTscPrinter {
   /// [FluttyTscPrintRequest.writeTimeout] is a success. Any bytes coming back
   /// (terminated by `\r\n`) are treated as an error message from the printer.
   static Future<FluttyTscPrintResponse> sendTscCommands(
-      FluttyTscPrintRequest request) async {
+    FluttyTscPrintRequest request,
+  ) async {
     if (request.commands.isEmpty) {
       const message =
           'Command list must not be empty and must end with a TscPrint command.';
@@ -71,7 +72,8 @@ class FluttyTscPrinter {
   /// Returns `true` when the printer accepts the connection, throws an
   /// [Exception] carrying the error message otherwise.
   static Future<bool> testConnection(
-      FluttyTscTestConnectionRequest request) async {
+    FluttyTscTestConnectionRequest request,
+  ) async {
     try {
       final socket = await Socket.connect(
         request.ipAddress,
