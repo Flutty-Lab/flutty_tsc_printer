@@ -45,8 +45,8 @@ class FluttyTscPrinter {
       );
       socket.add(utf8.encode(request.commandsString));
       await socket.flush().timeout(
-            Duration(milliseconds: request.writeTimeout),
-          );
+        Duration(milliseconds: request.writeTimeout),
+      );
       final response = await _readResponse(
         socket,
         startTimeout: Duration(milliseconds: request.writeTimeout),

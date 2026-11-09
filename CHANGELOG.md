@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Require Flutter >=3.47.0 / Dart >=3.13.0
+
 ## 0.1.0
 
 * Replace the vendor TSC SDKs (`CommSDK.dll` on Windows, `tscsdk.jar` on

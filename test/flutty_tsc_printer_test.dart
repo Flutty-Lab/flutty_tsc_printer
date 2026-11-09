@@ -38,18 +38,17 @@ void main() {
     int port, {
     int writeTimeout = 500,
     int readTimeout = 300,
-  }) =>
-      FluttyTscPrintRequest(
-        ipAddress: '127.0.0.1',
-        port: port,
-        writeTimeout: writeTimeout,
-        readTimeout: readTimeout,
-        commands: [
-          TscSize(width: 76, height: 25),
-          TscText(x: 10, y: 10, font: '3', content: 'Hello World'),
-          TscPrint(quantity: 1),
-        ],
-      );
+  }) => FluttyTscPrintRequest(
+    ipAddress: '127.0.0.1',
+    port: port,
+    writeTimeout: writeTimeout,
+    readTimeout: readTimeout,
+    commands: [
+      TscSize(width: 76, height: 25),
+      TscText(x: 10, y: 10, font: '3', content: 'Hello World'),
+      TscPrint(quantity: 1),
+    ],
+  );
 
   test('empty command list returns a bad param response', () async {
     final result = await FluttyTscPrinter.sendTscCommands(
