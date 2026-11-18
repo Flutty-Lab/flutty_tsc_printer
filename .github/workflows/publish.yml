@@ -1,7 +1,11 @@
 name: Publish to pub.dev
 
+# pub.dev n'accepte la publication OIDC que sur un push de tag correspondant
+# au tag-pattern configuré dans l'admin du package (ex. v{{version}}).
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   publish:
