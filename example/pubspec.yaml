@@ -12,5 +12,6 @@ dependencies:
   flutty_tsc_printer:
     path: ../
 
+  material_ui: ^1.11.1
 flutter:
   uses-material-design: true

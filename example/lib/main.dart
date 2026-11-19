@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutty_tsc_printer/flutty_tsc_printer.dart';
 
 void main() {
